@@ -1,0 +1,2 @@
+# shortql
+graphql-cache
