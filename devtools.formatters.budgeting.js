@@ -1,2 +1,0 @@
-var window=global;var $CLJS=require("./cljs_env");require("./goog.base.js");require("./cljs.core.js");require("./devtools.formatters.templating.js");require("./devtools.formatters.state.js");require("./devtools.prefs.js");require("./devtools.munging.js");require("./devtools.formatters.markup.js");
-$CLJS.DE="undefined"!==typeof WeakSet?new WeakSet:new $CLJS.ae($CLJS.nh);

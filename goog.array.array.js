@@ -1,2 +1,0 @@
-var window=global;var $CLJS=require("./cljs_env");require("./goog.base.js");
-$CLJS.Yh=function(a){return"string"==typeof a};$CLJS.Nl=Array.prototype.forEach?function(a,b){Array.prototype.forEach.call(a,b,void 0)}:function(a,b){for(var c=a.length,d=$CLJS.Yh(a)?a.split(""):a,e=0;e<c;e++)e in d&&b.call(void 0,d[e],e,a)};
