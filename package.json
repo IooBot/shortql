@@ -1,0 +1,22 @@
+{
+  "name": "shortql",
+  "version": "1.0.0",
+  "description": "smart graphql cache",
+  "main": "graphql_cache.core.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IooBot/shortql"
+  },
+  "keywords": [
+    "clojurescript",
+    "cljs",
+    "shadow-cljs",
+    "graphql"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ioobot inc",
+  "license": "private",
+  "homepage": "https://github.com/IooBot/shortql"
+}

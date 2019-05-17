@@ -1,0 +1,2 @@
+var window=global;var $CLJS=require("./cljs_env");require("./goog.base.js");require("./cljs.core.js");require("./goog.array.array.js");require("./goog.labs.useragent.util.js");require("./goog.string.internal.js");require("./devtools.prefs.js");require("./devtools.util.js");require("./devtools.formatters.core.js");
+$CLJS.$H=new $CLJS.Q(null,"legacy-formatter","legacy-formatter",-1954119499);
