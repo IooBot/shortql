@@ -1,6 +1,6 @@
 {
   "name": "shortql",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "smart graphql cache",
   "main": "graphql_cache.core.js",
   "repository": {
