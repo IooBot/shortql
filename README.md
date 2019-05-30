@@ -1,6 +1,7 @@
 ## shortql
 
-> A simple, modular GraphQL cache supporting multi-platform for Javascript
+> A simple, modular GraphQL cache supporting multi-platform for Javascript.
+> Flexible configuration control for querying data and also support open or close debug log.
 
 The old version is named graphql-sync-multi-platform
 
@@ -57,9 +58,17 @@ default close console.log
 
 ### Usage
 
-**` QL.find_one(collection,condition,fields) `**
+**` QL.find_one(collection,condition,fields,option) `**
 
-**` QL.find_many(collection,condition,fields) `**
+**` QL.find_many(collection,condition,fields,option) `**
+
+#### skip cache and get new fetch data
+
+    setting option: {force : true}
+
+    eg:
+
+    QL.find_one('order', {id: "xxx"}, ['id'], {force: true});
 
 **` QL.insert(collection,condition,fields) `**
 
@@ -67,20 +76,22 @@ default close console.log
 
 **` QL.remove(collection,condition) `**
 
+    eg:
+
     import * as QL from "shortql/graphql_cache.core";
 
-    QL.find_many(options.collection,options.condition,options.fields).then(res => {
+    QL.find_many(collection,condition,fields).then(res => {
         return res;
     });
 
     // return result with 'ok' when insert or update success
-    QL.update(options.collection,options.condition,options.fields).then(res => {
+    QL.update(collection,condition,fields).then(res => {
         if(res.result === 'ok'){
             return res;
         }
     });
 
-    QL.remove(options.collection,options.condition).then(res => {
+    QL.remove(collection,condition).then(res => {
         if(res === 'ok'){
             // others operation
         }
